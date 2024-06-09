@@ -25,7 +25,7 @@ public class ListActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        MyDBHandler DatabaseHandler = new MyDBHandler(this, null, null, 1);
+        DatabaseHandler DatabaseHandler = new DatabaseHandler(this, null, null, 1);
 
         ArrayList<User> userlist = new ArrayList<>(DatabaseHandler.getUsers());
 
